@@ -229,6 +229,7 @@ body {
 }
 
 
+/* Popup Form Styling */
 .popup-form {
     display: none;
     position: fixed;
@@ -236,50 +237,76 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    overflow-y: auto; /* Enable scrolling for smaller screens */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .popup-content {
     background: #fff;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     width: 90%;
-    max-width: 500px;
+    max-width: 450px;
+    margin: 20px auto;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-height: 90vh; /* Limit the height to fit smaller screens */
-    overflow-y: auto; /* Enable scrolling within the form */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 15px;
+    right: 15px;
+    font-size: 26px;
     cursor: pointer;
     color: #333;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff6600;
 }
 
 .popup-logo img {
-    max-width: 100px;
+    max-width: 120px;
     display: block;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
 }
 
 .btn-submit {
     background-color: #ff6600;
     border: none;
     color: white;
-    width: 100%;
-    padding: 10px;
+    padding: 12px;
+    border-radius: 8px;
     font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
+    width: 100%;
+    transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
@@ -289,15 +316,16 @@ body {
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
     .popup-content {
-        padding: 15px;
-        width: 95%;
+        padding: 18px;
         max-width: 400px;
     }
 
     .close-btn {
-        font-size: 22px;
-        top: 8px;
-        right: 8px;
+        font-size: 24px;
+    }
+
+    .popup-logo img {
+        max-width: 100px;
     }
 
     .btn-submit {
@@ -307,8 +335,8 @@ body {
 
 @media (max-width: 480px) {
     .popup-content {
-        padding: 10px;
-        max-width: 300px;
+        padding: 15px;
+        max-width: 320px;
     }
 
     .popup-logo img {
@@ -319,4 +347,10 @@ body {
         font-size: 14px;
         padding: 10px;
     }
+}
+
+/* Scrolling Effect for Overflow */
+.popup-form .popup-content {
+    max-height: 85vh;
+    overflow-y: auto;
 }
