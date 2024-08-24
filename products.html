@@ -74,7 +74,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Premium Cardamom</h5>
                             <p class="card-text">Sourced from the finest estates, our premium cardamom delivers a fragrant aroma and rich taste to elevate your dishes.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#cardamomModal">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -193,6 +193,44 @@
         </div>
     </div>
     
+
+
+<!-- Modal Structure -->
+<div class="modal fade" id="cardamomModal" tabindex="-1" role="dialog" aria-labelledby="cardamomModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cardamomModalLabel">
+                    <i class="fas fa-seedling"></i> Premium Cardamom
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="pexels-ksphotography-9142634[1].jpg" alt="Premium Cardamom" class="img-fluid mb-3">
+                <p>Sourced from the finest estates, our premium cardamom delivers a fragrant aroma and rich taste to elevate your dishes.</p>
+                <h6><i class="fas fa-info-circle"></i> Product Specifications</h6>
+                <ul>
+                    <li><i class="fas fa-check"></i> Grade: AAA</li>
+                    <li><i class="fas fa-check"></i> Origin: Guatemala</li>
+                    <li><i class="fas fa-check"></i> Certification: Organic</li>
+                </ul>
+                <h6><i class="fas fa-box"></i> Packaging Options</h6>
+                <p>Available in 50g, 100g, and 200g packets.</p>
+                <a href="buy-now.html" class="btn btn-success btn-block">
+                    <i class="fas fa-shopping-cart"></i> Buy Now
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-chevron-left"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
     <div class="popup-form" id="popupForm">
