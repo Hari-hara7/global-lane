@@ -114,51 +114,62 @@
         </div>
     </section>
 
+   
+    
     <div class="popup-form" id="popupForm">
         <div class="popup-content">
             <span class="close-btn" id="closeBtn">&times;</span>
-            <div class="popup-logo">
+            <div class="popup-logo text-center">
                 <img src="Globallane.png" alt="Global Lane Logo">
             </div>
-            <h2 class="text-center">Client Details</h2>
-            <form>
+            <h2 class="text-center">Product Inquiry Form</h2>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
                 <div class="form-group">
                     <label for="clientName">Full Name</label>
-                    <input type="text" class="form-control" id="clientName" placeholder="Enter your name">
+                    <input type="text" class="form-control" id="clientName" name="name" placeholder="Enter your name" required>
                 </div>
                 <div class="form-group">
                     <label for="clientEmail">Email</label>
-                    <input type="email" class="form-control" id="clientEmail" placeholder="Enter your email">
+                    <input type="email" class="form-control" id="clientEmail" name="_replyto" placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
                     <label for="clientPhone">Phone Number</label>
-                    <input type="text" class="form-control" id="clientPhone" placeholder="Enter your phone number">
+                    <input type="text" class="form-control" id="clientPhone" name="phone" placeholder="Enter your phone number" required>
                 </div>
                 <div class="form-group">
-                    <label for="productInterest">Interested Product</label>
-                    <select class="form-control" id="productInterest">
-                        <option>Arabica Coffee Beans</option>
-                        <option>Organic Pepper</option>
-                        <option>Premium Cardamom</option>
-                        <option>Raw Coffee Beans</option>
-                        <option>Basmati Rice</option>
-                        <option>Other Product Interested</option>
+                    <label for="clientCountry">Country</label>
+                    <select class="form-control" id="clientCountry" name="country" required>
+                        <option value="USA">USA</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">UK</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <!-- Add more countries as needed -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productInterest">Product Name</label>
+                    <select class="form-control" id="productInterest" name="product" required>
+                        <option value="Arabica Coffee Beans">Arabica Coffee Beans</option>
+                        <option value="Organic Pepper">Organic Pepper</option>
+                        <option value="Premium Cardamom">Premium Cardamom</option>
+                        <option value="Raw Coffee Beans">Raw Coffee Beans</option>
+                        <option value="Basmati Rice">Basmati Rice</option>
+                        <option value="Other">Other (Specify Below)</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="otherProduct">If Other, Specify</label>
-                    <input type="text" class="form-control" id="otherProduct" placeholder="Specify other product">
+                    <input type="text" class="form-control" id="otherProduct" name="other_product" placeholder="Specify other product">
                 </div>
                 <div class="form-group">
-                    <label for="quantity">Quantity (kg/tons):</label>
-                    <input type="text" id="quantity" class="form-control" placeholder="Enter quantity" required>
+                    <label for="quantity">Quantity (kg/tons)</label>
+                    <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Enter quantity" required>
                 </div>
-                <button type="submit" class="btn1 btn-primary btn-block">Submit</button>
+                <button type="submit" class="btn-submit btn btn-primary btn-block">Submit</button>
             </form>
         </div>
     </div>
-    
-    
 
     <!-- Footer -->
     <footer class="footer bg-dark text-white py-4">
@@ -205,14 +216,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Automatic Pop-Up Script
         document.addEventListener("DOMContentLoaded", function () {
             setTimeout(function () {
-                document.getElementById("popupForm").style.display = "block";
-            }, 2000); // Adjust the timing as needed
+                document.getElementById("popupForm").style.display = "flex";
+            }, 2000);
         });
 
-        // Close Button Script
         document.getElementById("closeBtn").onclick = function () {
             document.getElementById("popupForm").style.display = "none";
         };
