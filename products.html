@@ -85,7 +85,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Raw Coffee Beans</h5>
                             <p class="card-text">Our raw coffee beans are sourced from premium plantations, offering a robust flavor and aromatic experience for the perfect brew.</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#coffeeBeansModal">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -232,6 +232,43 @@
 </div>
 
 
+
+<!-- Modal Structure -->
+<div class="modal fade" id="coffeeBeansModal" tabindex="-1" role="dialog" aria-labelledby="coffeeBeansModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="coffeeBeansModalLabel">
+                    <i class="fas fa-coffee"></i> Raw Coffee Beans
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="WhatsApp Image 2024-08-23 at 22.57.57_dce5dd9b.jpg" alt="Raw Coffee Beans" class="img-fluid mb-3">
+                <p>Our raw coffee beans are sourced from premium plantations, offering a robust flavor and aromatic experience for the perfect brew.</p>
+                <h6><i class="fas fa-info-circle"></i> Product Specifications</h6>
+                <ul>
+                    <li><i class="fas fa-check"></i> Grade: AA</li>
+                    <li><i class="fas fa-check"></i> Processing Method: Natural</li>
+                    <li><i class="fas fa-check"></i> Origin: Colombia</li>
+                    <li><i class="fas fa-check"></i> Certification: Organic</li>
+                </ul>
+                <h6><i class="fas fa-box"></i> Packaging Options</h6>
+                <p>Available in 500g, 1kg, and 5kg bags.</p>
+                <a href="buy-now.html" class="btn btn-success btn-block">
+                    <i class="fas fa-shopping-cart"></i> Buy Now
+                </a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <i class="fas fa-chevron-left"></i> Close
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
     <div class="popup-form" id="popupForm">
         <div class="popup-content">
