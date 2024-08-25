@@ -43,6 +43,30 @@ This project represents the official website of Global Lane, an agricultural exp
   - **Google Analytics**: For tracking user behavior and website traffic.
   - **Tawk.to**: For real-time chat integration with visitors.
 
+global-lane-website/
+│
+├── index.html              # Landing page with hero section and product showcase
+├── about.html              # About Us page
+├── products.html           # Products page listing all agricultural exports
+├── services.html           # Services page detailing services offered by Global Lane
+├── trade-resources.html    # Trade Resources page providing useful information
+├── client-portal.html      # Client Portal with authentication and user management
+├── contact.html            # Contact Us page with form and contact information
+│
+├── css/
+│   └── styles.css          # Main stylesheet for the website
+│
+├── js/
+│   └── scripts.js          # Custom JavaScript code for form handling and modals
+│
+├── images/
+│   └── logo.png            # Logo of Global Lane
+│   └── thank-you-image.jpg # Image displayed after successful form submission
+│
+└── README.md               # Project documentation (you are here)
+
+
+
 ## Getting Started
 To get a local copy of the project up and running, follow these steps:
 
@@ -57,6 +81,12 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/your-username/global-lane-website.git
    cd global-lane-website
+
+
+
+
+This README provides a comprehensive guide for anyone looking to understand, contribute to, or use your project.
+
 
 
 
