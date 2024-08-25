@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal - Global Lane</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="#">
+            <img src="Globallane.png" alt="Global Lane Logo" class="logo">
+            Global Lane
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="trade-resources.html">Trade Resources</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item active"><a class="nav-link" href="client-portal.html">Client Portal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="app" class="container mt-5">
+        <!-- Clerk will mount the Sign-In or User Button here -->
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-md-4">
+                    <h5>About Global Lane</h5>
+                    <p>Global Lane is dedicated to providing the highest quality agricultural products to clients around the world, ensuring sustainability and excellence in everything we do.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white">About Us</a></li>
+                        <li><a href="products.html" class="text-white">Products</a></li>
+                        <li><a href="services.html" class="text-white">Services</a></li>
+                        <li><a href="contact.html" class="text-white">Contact</a></li>
+                        <li><a href="client-portal.html" class="text-white">Client Portal</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:globallanemarketing@gmail.com" class="text-white">globallanemarketing@gmail.com</a></p>
+                    <p>Phone: +91 8147052198</p>
+                    <div class="social-icons">
+                        <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p>&copy; 2024 Global Lane. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Clerk with your Clerk Publishable key and Frontend API URL -->
+    <script
+        async
+        crossorigin="anonymous"
+        data-clerk-publishable-key="pk_test_b3B0aW11bS1zdGFsbGlvbi0xNi5jbGVyay5hY2NvdW50cy5kZXYk"
+        src="https://optimum-stallion-16.clerk.accounts.dev/npm/@clerk/clerk-js@latest/dist/clerk.browser.js"
+        type="text/javascript">
+    </script>
+
+    <script>
+        window.addEventListener('load', async function () {
+            await Clerk.load()
+
+            if (Clerk.user) {
+                document.getElementById('app').innerHTML = `
+                    <div id="user-button"></div>
+                `
+
+                const userButtonDiv = document.getElementById('user-button')
+                Clerk.mountUserButton(userButtonDiv)
+            } else {
+                document.getElementById('app').innerHTML = `
+                    <div id="sign-in"></div>
+                `
+
+                const signInDiv = document.getElementById('sign-in')
+                Clerk.mountSignIn(signInDiv)
+            }
+        })
+    </script>
+</body>
+</html>
