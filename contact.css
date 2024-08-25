@@ -1,0 +1,282 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ff6600;
+    background-color: rgba(255, 102, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.contact-section h2 {
+    color: #333;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.contact-section h2::after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background-color: #ff6600;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.contact-section p {
+    color: #555;
+    font-size: 16px;
+}
+
+.contact-section ul {
+    padding-left: 0;
+}
+
+.contact-section ul li {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.contact-section ul li i {
+    color: #ff6600;
+    margin-right: 10px;
+}
+
+.social-links a {
+    color: #555;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6600;
+}
+
+/* Contact Form */
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form .form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+.contact-form .btn-primary {
+    background-color: #ff6600;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #e05500;
+    box-shadow: 0 4px 10px rgba(224, 85, 0, 0.4);
+}
+
+/* Map Section */
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 20px 0;
+    color: #666;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Special Effects */
+.contact-section h5::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: #ff6600;
+    display: block;
+    margin-top: 8px;
+}
+
+.contact-section h5 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background-color: #fdfdfd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-section input[type="text"]:hover,
+.contact-section input[type="email"]:hover,
+.contact-section textarea:hover {
+    transform: scale(1.02);
+}
+
+.contact-section input[type="text"]::placeholder,
+.contact-section input[type="email"]::placeholder,
+.contact-section textarea::placeholder {
+    color: #aaa;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+    }
+
+    .contact-section h5 {
+        font-size: 20px;
+    }
+
+    .contact-section ul li {
+        font-size: 14px;
+    }
+
+    .contact-section .form-control {
+        font-size: 14px;
+    }
+
+    .social-links a {
+        font-size: 20px;
+    }
+
+    .contact-form .btn-primary {
+        font-size: 16px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer h5 {
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 1rem;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a.text-white {
+    color: #fff;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+.footer hr {
+    border: 0;
+    height: 1px;
+    background: #fff;
+    margin: 20px 0;
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.alert {
+    margin-top: 20px;
+}
