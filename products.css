@@ -18,6 +18,7 @@ body {
 .navbar-brand {
     display: flex;
     align-items: center;
+    font-family: 'Playfair Display', serif;
 }
 
 .navbar-brand .logo {
