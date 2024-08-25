@@ -507,3 +507,91 @@ body {
     font-style: normal;
   }
   
+
+  /* Modal Header Logo */
+.modal-header .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Modal Title */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Close Button in Modal */
+.modal-header .close {
+    font-size: 1.25rem;
+    color: #333;
+    opacity: 0.8;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+    opacity: 1;
+}
+
+/* Modal Body */
+.modal-body {
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #555;
+}
+
+.modal-body h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.modal-body p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Email Link */
+.modal-body a {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.modal-body a:hover {
+    text-decoration: none;
+}
+
+/* Thank You Image */
+.modal-body img.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 15px;
+    text-align: center;
+}
+
+.modal-footer .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.modal-footer .btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.modal-footer .btn-primary:hover,
+.modal-footer .btn-primary:focus {
+    background-color: #0056b3;
+    color: #fff;
+}

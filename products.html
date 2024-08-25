@@ -425,11 +425,11 @@
 
 
   <!-- Modal Structure -->
-  <div class="modal fade" id="buyNowModal" tabindex="-1" role="dialog" aria-labelledby="buyNowModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
+<div class="modal fade" id="buyNowModal" tabindex="-1" role="dialog" aria-labelledby="buyNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="buyNowModalLabel">Order Form</h5>
+                <h5 class="modal-title" id="buyNowModalLabel">Place Your Order</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -472,11 +472,35 @@
                             <!-- More countries... -->
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">Proceed</button>
+                    <button type="submit" class="btn btn-success btn-block">Proceed</button>
                 </form>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer justify-content-center">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Success Message Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img src="Globallane.png" alt="Global Lane Logo" class="logo mr-2">
+                <h5 class="modal-title" id="successModalLabel">Thank You for Your Order!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <h4 class="mb-3">We Will Contact You Shortly</h4>
+                <p>Your order has been received, and our team is reviewing the details. We will reach out to you soon to confirm and process your order.</p>
+                <p>If you have any questions, feel free to email us at <a href="mailto:globallanemarketing@gmail.com">globallanemarketing@gmail.com</a>.</p>
+                <img src="6963.jpg" alt="Thank You" class="img-fluid mt-3">
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -568,34 +592,37 @@
 
 
 
-    document.getElementById('orderForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-            
-            var form = event.target;
-            var formData = new FormData(form);
-            
-            fetch(form.action, {
-                method: form.method,
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => response.json()) // Convert response to JSON
-            .then(data => {
-                if (data.ok) {
-                    $('#buyNowModal').modal('hide'); // Hide the modal
-                    alert('We will contact you shortly.'); // Show confirmation message
-                } else {
-                    alert('There was an error submitting the form. Please try again.');
-                    console.error('Form submission error:', data); // Log the error details
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting the form. Please try again.');
-            });
-        });
+    document.addEventListener("DOMContentLoaded", function() {
+  const orderForm = document.getElementById("orderForm");
+
+  orderForm.addEventListener("submit", async function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(orderForm);
+
+    try {
+      const response = await fetch(orderForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        $('#buyNowModal').modal('hide');  // Hide the order form modal
+        $('#successModal').modal('show'); // Show the success modal
+        orderForm.reset();  // Reset the form fields
+      } else {
+        alert("There was an error submitting the form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Form submission error:", error);
+      alert("There was an error submitting the form. Please try again.");
+    }
+  });
+});
+
     </script>
 </body>
 </html>
