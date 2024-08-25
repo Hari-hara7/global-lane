@@ -1,0 +1,21 @@
+{
+    "name": "Global Lane",
+    "short_name": "Global Lane",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff6600",
+    "icons": [
+      {
+        "src": "/path/to/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/path/to/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
+  
