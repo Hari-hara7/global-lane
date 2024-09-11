@@ -241,7 +241,7 @@ section h2::after {
 
 /* Footer */
 footer {
-    background-color: #002F6C;
+    background-color: #000000;
     color: #ffffff;
     padding: 20px 0;
 }
@@ -535,7 +535,7 @@ footer a:hover {
 
 /* Footer Styles */
 .footer {
-    background-color: #333; /* Dark background for the footer */
+    background-color: #000000; /* Dark background for the footer */
     color: #fff; /* White text color */
     padding: 40px 0;
 }
