@@ -40,11 +40,10 @@
         <div class="hero-content text-center">
             <h1>Welcome to Global Lane</h1>
             <p>Where Agricultural Excellence Meets Global Reach</p>
-            <a href="products.html" class="btn btn-primary">Explore Products</a>
+            <a href="products.html" class="btn btn-primary">Explore Our Collection</a>
         </div>
         <div class="overlay"></div> <!-- Add an overlay for a more stylish look -->
     </section>
-    
 
     <!-- About Us Summary -->
     <section class="about-us py-5">
@@ -79,71 +78,112 @@
         </div>
     </section>
 
-    <!-- Featured Products -->
-    <section class="featured-products py-5">
-        <div class="container">
-            <h2 class="text-center">Featured Products</h2>
-            <div class="row">
-                <!-- Product 1 -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="WhatsApp Image 2024-08-23 at 22.57.57_dce5dd9b.jpg" class="card-img-top" alt="Product 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Arabica Coffee Beans</h5>
-                            <p class="card-text">Sourced from the finest plantations, our Arabica coffee beans are renowned for their rich flavor and aroma.</p>
-                            <a href="products.html" class="btn btn-primary">View Details</a>
-                        </div>
+    <!-- Collection Section -->
+    <!-- Our Collection Section -->
+<!-- Our Collection Section -->
+<section id="collection" class="py-5 text-center">
+    <div class="container">
+        <h2 class="mb-4">Explore Our Exclusive Collection</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg border-0">
+                    <img src="meric-tuna-CE1OvMrZumQ-unsplash.jpg" class="card-img-top" alt="Our Products Collection">
+                    <div class="card-body">
+                        <h5 class="card-title">Discover All Our Products</h5>
+                        <p class="card-text">
+                            Explore our wide range of premium agricultural exports including coffee, pepper, cardamom, and more. Each product is handpicked to ensure the best quality for our customers.
+                        </p>
+                        <a href="products.html" class="btn btn-primary btn-lg mt-3">
+                            View Collection
+                        </a>
                     </div>
                 </div>
-                <!-- Product 2 -->
-                <div class="col-md-4">
+                <!-- Product Dropdowns -->
+                <div class="accordion mt-4" id="productAccordion">
+                    <!-- Arabic Coffee Beans -->
                     <div class="card">
-                        <img src="pexels-victoria-bowers-148548814-10487732[1].jpg" class="card-img-top" alt="Product 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Organic Pepper</h5>
-                            <p class="card-text">Our organic pepper is carefully cultivated to ensure the highest quality, with a bold and intense flavor profile.</p>
-                            <a href="products.html" class="btn btn-primary">View Details</a>
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Arabic Coffee Beans
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#productAccordion">
+                            <div class="card-body">
+                                Arabic Coffee Beans offer a rich and aromatic experience with every cup. Sourced from the best farms, these beans are perfect for a robust coffee experience.
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-4">
+                    <!-- Organic Pepper -->
                     <div class="card">
-                        <img src="pexels-ksphotography-9142634[1].jpg" class="card-img-top" alt="Cardamom">
-                        <div class="card-body">
-                            <h5 class="card-title">Premium Cardamom</h5>
-                            <p class="card-text">Sourced from the finest estates, our premium cardamom delivers a fragrant aroma and rich taste to elevate your dishes.</p>
-                            <a href="products.html" class="btn btn-primary">View Details</a>
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Organic Pepper
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#productAccordion">
+                            <div class="card-body">
+                                Our Organic Pepper is grown without chemicals, ensuring a pure and intense flavor. Ideal for enhancing the taste of your dishes.
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md-4">
+                    <!-- Premium Cardamom -->
                     <div class="card">
-                        <img src="pexels-polina-tankilevitch-4109744[1].jpg" class="card-img-top" alt="Raw Coffee">
-                        <div class="card-body">
-                            <h5 class="card-title">Raw Coffee Beans</h5>
-                            <p class="card-text">Our raw coffee beans are sourced from premium plantations, offering a robust flavor and aromatic experience for the perfect brew.</p>
-                            <a href="products.html" class="btn btn-primary">View Details</a>
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Premium Cardamom
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#productAccordion">
+                            <div class="card-body">
+                                Our Premium Cardamom is handpicked for its exceptional quality and aroma, perfect for both savory and sweet dishes.
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-
-                <!-- Product 3 -->
-                <div class="col-md-4">
+                    <!-- Raw Coffee Beans -->
                     <div class="card">
-                        <img src="basmati-rice-6578507[1].jpg" class="card-img-top" alt="Product 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Basmati Rice</h5>
-                            <p class="card-text">Our Basmati rice is known for its long grains, fragrant aroma, and delicate flavor, making it a favorite choice worldwide.</p>
-                            <a href="products.html" class="btn btn-primary">View Details</a>
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Raw Coffee Beans
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#productAccordion">
+                            <div class="card-body">
+                                Raw Coffee Beans are perfect for roasting to your preferred level. Freshly roasted, they offer a full flavor profile for a superior coffee experience.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rice -->
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Rice
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#productAccordion">
+                            <div class="card-body">
+                                <p><strong>Basmati Rice:</strong> Known for its fragrant aroma and long grains, perfect for biryanis and pilafs.</p>
+                                <p><strong>Regular Rice:</strong> Ideal for everyday meals, offering versatility and comfort in every bite.</p>
+                                <p><strong>All Types of Rice Products:</strong> Explore our full range of rice products to find the perfect fit for your needs.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+
 
     <!-- Client Testimonials -->
     <section class="testimonials py-5 bg-light">
@@ -155,7 +195,7 @@
                         <div class="d-flex justify-content-center">
                             <div class="testimonial text-center">
                                 <p>"Global Lane provided us with the best quality produce, and their service was impeccable!"</p>
-                                <h5>John Doe, ABC Corp</                                <h5>John Doe, ABC Corp</h5>
+                                <h5>John Doe, ABC Corp</h5>
                             </div>
                         </div>
                     </div>
@@ -208,109 +248,27 @@
                         <li><a href="client-portal.html" class="text-white">Client Portal</a></li>
                     </ul>
                 </div>
-                <!-- Contact Info -->
-                <div class="col-md-4">
-                    <h5>Contact Us</h5>
-                    <p>Email: <a href="globallanemarketing@gmail.com" class="text-white">globallanemarketing@gmail.com</a></p>
-                    <p>Phone: 8147052198</p>
-                    <p>Phone: +966564427890</p>
-                    <div class="social-icons">
-                        <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/globallane-international-75b0aa324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/globallane_international/" class="text-white"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
             </div>
-            <hr class="bg-white">
-            <div class="text-center">
+            <!-- Contact Info -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-map-marker-alt"></i> Mangalore, Karnataka, India</p>
+                <p><i class="fas fa-envelope"></i> globallanemarketing@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> +91 81470 52198</p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12 text-center">
                 <p>&copy; 2024 Global Lane. All Rights Reserved.</p>
             </div>
         </div>
-    </footer>
-    
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                    .then((registration) => {
-                        console.log('Service Worker registered with scope:', registration.scope);
-                    })
-                    .catch((error) => {
-                        console.log('Service Worker registration failed:', error);
-                    });
-            });
-        }
+    </div>
+</footer>
 
-
-
-
-        let deferredPrompt;
-    
-    window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent the mini-infobar from appearing on mobile
-        e.preventDefault();
-        // Stash the event so it can be triggered later.
-        deferredPrompt = e;
-        
-        // Show the download prompt after 3 seconds
-        setTimeout(() => {
-            // Create a custom prompt
-            if (deferredPrompt) {
-                // Create a custom notification or modal
-                const promptContainer = document.createElement('div');
-                promptContainer.innerHTML = `
-                    <div style="position: fixed; bottom: 20px; left: 20px; background: #fff; padding: 20px; border: 1px solid #ccc; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-                        <p>Install our app for a better experience!</p>
-                        <button id="install-btn">Install</button>
-                    </div>
-                `;
-                document.body.appendChild(promptContainer);
-                
-                document.getElementById('install-btn').addEventListener('click', () => {
-                    deferredPrompt.prompt();
-                    deferredPrompt.userChoice.then((choiceResult) => {
-                        if (choiceResult.outcome === 'accepted') {
-                            console.log('User accepted the install prompt');
-                        } else {
-                            console.log('User dismissed the install prompt');
-                        }
-                        deferredPrompt = null;
-                    });
-                });
-            }
-        }, 3000);
-    });
-
-    window.addEventListener('appinstalled', () => {
-        console.log('PWA installed');
-    });
-
-
-
-    </script>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-    
-        <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/66cb29a650c10f7a00a0391d/1i64plctc';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
-
