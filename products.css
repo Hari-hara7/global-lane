@@ -31,26 +31,21 @@ body {
     font-size: 1rem; /* Font size */
     font-weight: bold; /* Bold text */
     text-align: center; /* Center text */
-    display: inline-flex; /* Inline flex for alignment */
-    align-items: center; /* Center items vertically */
-    justify-content: center; /* Center items horizontally */
+    display: inline-block; /* Inline block for alignment */
     transition: background-color 0.3s ease; /* Smooth background color transition */
+    text-decoration: none; /* Remove underline */
 }
 
 .btn-enquire-now:hover {
     background-color: #218838; /* Darker green on hover */
-    text-decoration: none; /* Remove underline on hover */
-}
-
-.btn-enquire-now i {
-    margin-right: 0.5rem; /* Space between icon and text */
-    color: #ffffff; /* White icon color */
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 .btn-enquire-now:focus, .btn-enquire-now:active {
     outline: none; /* Remove default focus outline */
     box-shadow: none; /* Remove box-shadow on focus and active states */
 }
+
 
 
 .navbar-brand .logo {
@@ -626,4 +621,27 @@ body {
 .modal-footer .btn-primary:focus {
     background-color: #0056b3;
     color: #fff;
+}
+
+
+
+
+/* Style for the Enquire Now button */
+.modal-body .btn-enquire {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px; /* Padding inside button */
+    text-transform: uppercase; /* Uppercase text */
+    display: block; /* Full width */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.modal-body .btn-enquire:hover {
+    background-color: #218838; /* Darker green on hover */
 }
