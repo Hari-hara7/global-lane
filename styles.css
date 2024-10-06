@@ -630,3 +630,74 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #000000; /* Pure black background */
+    color: #ffffff; /* White text */
+    padding: 40px 0; /* Padding for better spacing */
+    font-size: 14px; /* Adjust text size */
+}
+
+.footer img {
+    max-width: 150px; /* Adjust the logo size */
+    margin-bottom: 15px;
+}
+
+.footer h5 {
+    font-weight: bold; /* Make headings bold */
+    margin-bottom: 15px;
+    font-size: 16px; /* Adjust heading size */
+}
+
+.footer p, .footer a {
+    font-size: 14px;
+    line-height: 1.7; /* Increase line spacing for readability */
+    color: #ffffff; /* Ensure links are white */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: #f4d03f; /* Optional hover color */
+}
+
+.footer .social-icons a {
+    font-size: 20px; /* Make social icons bigger */
+    margin-right: 10px; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.footer .social-icons a:hover {
+    color: #f4d03f; /* Change icon color on hover */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center; /* Center-align text on mobile */
+    }
+
+    .footer .col-md-3 {
+        margin-bottom: 30px; /* Space between sections */
+    }
+}
+
+/* Style for the horizontal line */
+.footer hr.bg-white {
+    border-top: 1px solid #ffffff;
+    opacity: 0.2; /* Slightly fade the line */
+    margin: 20px 0;
+}
+
+.footer .text-center {
+    margin-top: 20px; /* Space between sections */
+    font-size: 13px; /* Smaller copyright text */
+}
