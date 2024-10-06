@@ -701,3 +701,69 @@ hr {
     margin-top: 20px; /* Space between sections */
     font-size: 13px; /* Smaller copyright text */
 }
+/* General Navbar Styling */
+.navbar {
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo {
+    width: 40px;
+    height: auto;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .nav-link i {
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-item .fas {
+    display: inline-block;
+}
+
+/* Ensure both text and icons show on mobile screens */
+.navbar-nav .nav-text {
+    display: inline-block;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+        justify-content: flex-start;
+    }
+    .navbar-nav .nav-link i {
+        display: inline-block;
+    }
+    .navbar-nav .nav-link span {
+        display: inline-block;
+    }
+}
+
+/* Sticky Navbar */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+/* Navbar-toggler custom */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    color: #000;
+}
