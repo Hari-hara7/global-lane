@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="globallane.jpg" alt="Global Lane Logo" width="400" height="600"/>
+  <img src="globallane.jpg" alt="Global Lane Logo" width="800" height="600"/>
 </p>
 
 # Global Lane Website
