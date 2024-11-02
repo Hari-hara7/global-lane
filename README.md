@@ -1,10 +1,10 @@
-
-
-
+<p align="center">
+  <img src="images/logo.png" alt="Global Lane Logo" width="200"/>
+</p>
 
 # Global Lane Website
 
-Welcome to the official repository for the **Global Lane** website. Global Lane is dedicated to providing the highest quality agricultural products to clients around the world, ensuring sustainability and excellence in everything we do.
+Welcome to the official repository for the **Global Lane** website. Global Lane is dedicated to providing high-quality agricultural products worldwide, focusing on sustainability and excellence.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -16,64 +16,36 @@ Welcome to the official repository for the **Global Lane** website. Global Lane 
 - [License](#license)
 
 ## Overview
-This project represents the official website of Global Lane, an agricultural export company. The website includes pages for showcasing products, providing services, managing client portals, and offering resources related to trade. The site is fully responsive and includes features like modal popups, form handling, user authentication, and live chat integration.
+This project represents the official website of Global Lane, an agricultural export company. The website showcases products, provides services, offers a client portal, and includes resources for trade. It’s fully responsive and includes features like modal popups, form handling, user authentication, and live chat.
 
 ## Features
-- **Responsive Design**: The website is designed to be fully responsive, ensuring a seamless experience across all devices.
-- **User Authentication**: Integration with Clerk allows for secure user login and management.
-- **Form Handling**: Forms on the site are handled using Formspree, enabling backend-free form submissions.
-- **Live Chat**: Integrated Tawk.to for real-time communication with website visitors.
-- **Google Analytics**: Tracks user interactions and provides insights into site traffic.
-- **Modal Popups**: Enhanced user experience with modal popups for forms and confirmations.
+- **Responsive Design**: Optimized for all devices.
+- **User Authentication**: Powered by Clerk for secure login.
+- **Form Handling**: Formspree integration for backend-free submissions.
+- **Live Chat**: Tawk.to for real-time visitor communication.
+- **Google Analytics**: For tracking user interactions.
+- **Modal Popups**: Enhanced user experience with popups for forms and confirmations.
 
 ## Technologies Used
 - **Frontend**:
-  - **HTML5**: Markup language used for structuring the content.
-  - **CSS3**: Stylesheet language used for designing and styling the website.
-    - Flexbox and Media Queries for responsive design.
-    - Animations and transitions for smooth visual effects.
-  - **JavaScript**:
-    - For interactivity, form validation, and third-party integrations.
-  - **Bootstrap**: CSS framework used for creating responsive layouts and pre-built UI components.
-  - **FontAwesome**: Icon library used for adding visual icons.
-
+  - **HTML5**: Structure and content.
+  - **CSS3**: Styling with Flexbox, animations, and media queries.
+  - **JavaScript**: Interactivity, form validation, and third-party integrations.
+  - **Bootstrap**: Responsive layouts and pre-built components.
+  - **FontAwesome**: Icons for visual elements.
+  
 - **Third-Party Services**:
-  - **Formspree**: For handling form submissions.
-  - **Clerk**: For user authentication and profile management.
-  - **Google Analytics**: For tracking user behavior and website traffic.
-  - **Tawk.to**: For real-time chat integration with visitors.
-
-global-lane-website/
-│
-├── index.html              # Landing page with hero section and product showcase
-├── about.html              # About Us page
-├── products.html           # Products page listing all agricultural exports
-├── services.html           # Services page detailing services offered by Global Lane
-├── trade-resources.html    # Trade Resources page providing useful information
-├── client-portal.html      # Client Portal with authentication and user management
-├── contact.html            # Contact Us page with form and contact information
-│
-├── css/
-│   └── styles.css          # Main stylesheet for the website
-│
-├── js/
-│   └── scripts.js          # Custom JavaScript code for form handling and modals
-│
-├── images/
-│   └── logo.png            # Logo of Global Lane
-│   └── thank-you-image.jpg # Image displayed after successful form submission
-│
-└── README.md               # Project documentation (you are here)
-
-
-
+  - **Formspree**: For form submissions.
+  - **Clerk**: User authentication and profile management.
+  - **Google Analytics**: User behavior tracking.
+  - **Tawk.to**: Real-time chat integration.
 
 ## Getting Started
-To get a local copy of the project up and running, follow these steps:
+To set up the project locally, follow these steps:
 
 ### Prerequisites
-Make sure you have the following installed:
-- A modern web browser (e.g., Chrome, Firefox)
+Ensure you have:
+- A web browser (e.g., Chrome, Firefox)
 - A text editor or IDE (e.g., Visual Studio Code)
 - Basic knowledge of HTML, CSS, and JavaScript
 
@@ -82,26 +54,23 @@ Make sure you have the following installed:
    ```bash
    git clone https://github.com/your-username/global-lane-website.git
    cd global-lane-website
-
-
-
-
-This README provides a comprehensive guide for anyone looking to understand, contribute to, or use your project.
-
-
-
-
-/global-lane/
-|-- index.html
-|-- about.html
-|-- products.html
-|-- services.html
-|-- trade-resources.html
-|-- contact.html
-|-- client-portal.html
-|-- css/
-|   |-- styles.css
-|-- js/
-|   |-- scripts.js
-|-- images/
-|   |-- (place images here)
+/global-lane-website/
+├── index.html              # Landing page with hero section and product showcase
+├── about.html              # About Us page
+├── products.html           # Products page listing agricultural exports
+├── services.html           # Services page detailing offerings
+├── trade-resources.html    # Trade Resources page with useful info
+├── client-portal.html      # Client Portal with authentication
+├── contact.html            # Contact Us page with form
+│
+├── css/
+│   └── styles.css          # Main stylesheet
+│
+├── js/
+│   └── scripts.js          # JavaScript for form handling and modals
+│
+├── images/
+│   └── logo.png            # Logo of Global Lane
+│   └── thank-you-image.jpg # Image after successful form submission
+│
+└── README.md               # Project documentation (you are here)
