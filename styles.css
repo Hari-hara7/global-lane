@@ -130,6 +130,35 @@ body, html {
     }
 }
 
+
+/* Additional custom styles for responsiveness */
+.reliable-trusted-services h2 {
+    font-size: 2.5rem;
+}
+
+.reliable-trusted-services p, .reliable-trusted-services ul {
+    font-size: 1.2rem;
+}
+
+/* Ensure text and icons are well adjusted on mobile */
+@media (max-width: 768px) {
+    .reliable-trusted-services h2 {
+        font-size: 2rem;
+    }
+
+    .reliable-trusted-services p {
+        font-size: 1rem;
+    }
+
+    .service-icon i {
+        font-size: 3rem;
+    }
+
+    .reliable-trusted-services .col-md-4 {
+        margin-bottom: 30px;
+    }
+}
+
 /* Section Headings */
 section h2 {
     font-family: 'Playfair Display', serif;
