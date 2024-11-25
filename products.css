@@ -7,19 +7,44 @@ body {
     box-sizing: border-box;
 }
 
-/* Navigation Bar Styles */
+/* Navigation Bar */
 .navbar {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 30px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(0, 47, 108, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    display: flex;
-    align-items: center;
     font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #FFA500;
 }
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 900
+
+.playfair-display-uniquifier {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #FFA500;
+}
+
 
 /* Enquire Now Button Styling */
 .btn-enquire-now {
