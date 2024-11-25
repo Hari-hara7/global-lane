@@ -13,6 +13,28 @@ body, html {
     margin: 0 auto;
     padding: 0 20px;
 }
+/* About Us Section */
+.about-us .btn {
+    margin: 0.5rem 0;
+}
+
+.about-us .btn-warning {
+    display: inline-block; /* Ensure buttons are on the same row unless stacked */
+    margin-left: 0; /* Reset left margin for smaller screens */
+}
+
+/* Stacking buttons on smaller screens */
+@media (max-width: 576px) {
+    .about-us .btn {
+        display: block; /* Stack buttons vertically */
+        width: 100%; /* Full-width for better usability */
+    }
+
+    .about-us .btn-warning {
+        margin-top: 0.5rem; /* Add spacing between stacked buttons */
+    }
+}
+
 
 /* Navigation Bar */
 .navbar {

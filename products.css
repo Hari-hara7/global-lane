@@ -712,3 +712,23 @@ body {
 .navbar-toggler-icon {
     color: #000;
 }
+
+
+
+
+.image-container {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem; /* Matches Bootstrap card border-radius */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    object-position: center; /* Centers the image within the container */
+}
