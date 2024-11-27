@@ -225,25 +225,30 @@ body {
 .footer {
     background-color: #000000;
     color: #fff;
+    justify-items: center;
     padding: 40px 0;
 }
 
 .footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
+    justify-items: center;
 }
 
 .footer p {
     margin-bottom: 10px;
+    justify-items: center;
 }
 
 .footer .social-icons {
     display: flex;
+    justify-items: center;
     gap: 15px;
 }
 
 .footer .social-icons a {
     font-size: 1.5rem;
+    justify-items: center;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -254,6 +259,7 @@ body {
 
 .footer hr {
     border: 0;
+    justify-items: center;
     border-top: 1px solid #fff;
     margin: 20px 0;
 }
